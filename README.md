@@ -29,13 +29,13 @@ sudo chmod +x /usr/local/bin/docker-compose
 ### USAGE:
 Run the following commands after doing the pre-requisites.
 ```
-docker-compose build
-docker-compose up -d
+sudo docker-compose build
+sudo docker-compose up -d
 ```
 
 ##### To verify that the containers are running use the below command:
 ```
-docker-compose ps
+sudo docker-compose ps
 ```
 
 ### How to Access the webpage
@@ -46,13 +46,13 @@ Type the following in the URL:
 
 ##### If you want to add a custom message in the Database try doing the following:
 ```
-sed -i -e 's/hello from db container/YOUR CUSTOM MESSAGE/' cloudtech_insert.php
+sudo sed -i -e 's/hello from db container/YOUR CUSTOM MESSAGE/' cloudtech_insert.php
 ```
 
 Re-Build the images and run the images in conatiner using:  
 ```
-docker-compose build
-docker-compose up -d
+sudo docker-compose build
+sudo docker-compose up -d
 ```
 
 Push the DB record inside the container:
