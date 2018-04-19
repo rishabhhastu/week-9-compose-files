@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+ node:
+  build: 
+   context: .
+   dockerfile: Dockerfile
+  container_name: nginx_container
+  ports:
+   - "80:80"
+  networks:
+   - nodeapp-network
+  links:
+   - mongodb
+  hostname: nginx
+  command: >
+     bash -c "service php7.0-fpm start && nginx"
+
+ mongodb:
+  image: mongo
+  container_name: mongodb_container
+  networks:
+   - nodeapp-network
+  hostname: mongodb
+  volumes: 
+   - ./mongodata:/data/db
+
+networks:
+ nodeapp-network:
+  driver: bridge
