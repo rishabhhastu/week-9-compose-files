@@ -46,7 +46,7 @@ Type the following in the URL:
 
 ##### If you want to add a custom message in the Database try doing the following:
 ```
-sed -i s/$bulk->insert(['_id' => 1, 'x' => 'hello from db container']);/$bulk->insert(['_id' => 1, 'x' => '<YOUR CUSTOM MESSAGE>']);
+sed -i s/$bulk->insert(['_id' => 1, 'x' => 'hello from db container']);/$bulk->insert(['_id' => 1, 'x' => '<YOUR CUSTOM MESSAGE>']);/ cloudtech_insert.php
 ```
 
 Re-Build the images and run the images in conatiner using:  
