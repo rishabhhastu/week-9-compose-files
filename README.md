@@ -6,6 +6,7 @@
 1. Automates the creation of a two tier topology consisting of a webserver and a database server in the backend.
 2. Dynamic building of the images of webserver (Nginx) and DB server (MongoDB) 
 3. Running the two images in different containers and inter-networking between them to display output
+4. Updating the value in the DB container from the webserver and displaying the changes
 
 
 ### Pre-requisites
