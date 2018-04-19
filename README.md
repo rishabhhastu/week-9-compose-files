@@ -16,7 +16,7 @@ git clone https://github.com/rishabhhastu/week-9-compose-files
 
 2. Change the directory to riha4022
 ```
-cd riha4022/
+cd week-9-compose-files/riha4022/
 ```
 
 3. Install docker-compose in your system. The below commands are for Linux OS. You can find the respective commands for your own flavor of OS
